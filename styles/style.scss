@@ -26,11 +26,11 @@ body {
 .nav_item {
     width: 20%;
     text-align: center;
-}
 
-.nav_item:hover {
-    cursor: pointer;
-    font-weight: bolder;
+    :hover {
+        cursor: pointer;
+        font-weight: bolder;
+    }
 }
 
 #sign_up {
@@ -60,11 +60,11 @@ body {
     outline: 2px solid black;
     display: inline-block;
     padding: 10px 10px 10px 10px;
-}
 
-.par_border:hover {
-    cursor: pointer;
-    font-weight: bolder;
+    &:hover {
+        cursor: pointer;
+        font-weight: bolder;
+    }
 }
 
 #content {
@@ -77,4 +77,45 @@ body {
 .intro_blurb {
     width: min(700px, 80%);
     font-size: 20px;
+}
+
+#gallery_cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+}
+
+#gallery {
+    width: 600px;
+    background-color: #dfdfdf;
+}
+
+.arrow_container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100px;
+    font-size: 50px;
+    background-color: #dfdfdf;
+    color: black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#left_arrow {
+  margin-right: 10px;
+}
+
+#right_arrow {
+  margin-left: 10px;
 }

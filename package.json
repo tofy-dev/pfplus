@@ -1,0 +1,26 @@
+{
+  "name": "pfplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "balanced-match": "^1.0.2",
+    "brace-expansion": "^1.1.11",
+    "concat-map": "^0.0.1",
+    "minimatch": "^3.1.2",
+    "node-dir": "^0.1.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tofy-dev/pfplus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tofy-dev/pfplus/issues"
+  },
+  "homepage": "https://github.com/tofy-dev/pfplus#readme"
+}
