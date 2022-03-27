@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body {
+    margin: 0px 0px 0px 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+#nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 10 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+
+.nav_item {
+    width: 20%;
+    text-align: center;
+}
+
+.nav_item:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#sign_up {
+    background-image: url("../images/degenerate.jpg");
+}
+
+.parallax {
+    position: relative;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+}
+
+.par_caption {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.par_border {
+    background-color: white;
+    outline: 2px solid black;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
+.par_border:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.intro_blurb {
+    width: min(700px, 80%);
+    font-size: 20px;
+}
