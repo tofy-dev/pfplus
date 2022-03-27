@@ -1,3 +1,2 @@
-import { foo } from './gallery.js';
-
-foo();
+import * as gallery from './gallery/gallery.js'
+gallery.init();

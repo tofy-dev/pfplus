@@ -82,7 +82,7 @@ body {
 #gallery_cont {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px 0px 40px 0px;
     height: 400px;
     width: 100%;
 }
@@ -90,6 +90,8 @@ body {
 #gallery {
     width: 600px;
     background-color: #dfdfdf;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .arrow_container {
