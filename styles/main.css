@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 10 !important;
   top: 0;
@@ -32,10 +33,6 @@ body {
 .nav_item:hover {
   cursor: pointer;
   font-weight: bolder;
-}
-
-#sign_up {
-  background-image: url("../images/degenerate.jpg");
 }
 
 .parallax {
@@ -68,26 +65,6 @@ body {
   font-size: 35px;
   color: white;
   background-color: black;
-}
-
-@keyframes turn_black {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: black;
-  }
-}
-#content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.intro_blurb {
-  width: min(700px, 80%);
-  font-size: 20px;
 }
 
 #gallery_cont {
@@ -130,6 +107,4 @@ body {
 
 #right_arrow {
   margin-left: 10px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -37,7 +37,7 @@ function preloadImages() {
     }
     document.querySelectorAll('.preloading_image').forEach(img => {
         img.addEventListener("load", () => {
-            img.remove();
+            img.style.display = "none";
         })
     })
 }

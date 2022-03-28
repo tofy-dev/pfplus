@@ -7,6 +7,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+// header stuff
 #title {
     text-align: center;
     font-family: 'Tajawal';
@@ -36,10 +37,7 @@ body {
     }
 }
 
-#sign_up {
-    background-image: url("../images/degenerate.jpg");
-}
-
+// parallax stuff
 .parallax {
     position: relative;
     min-height: 500px;
@@ -74,27 +72,7 @@ body {
     }
 }
 
-@keyframes turn_black {
-    0% {
-        background-color: white;
-    }
-    100% {
-        background-color: black;
-    }
-}
-
-#content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.intro_blurb {
-    width: min(700px, 80%);
-    font-size: 20px;
-}
-
+// gallery stuff
 #gallery_cont {
     display: flex;
     justify-content: center;

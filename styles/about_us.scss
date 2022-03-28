@@ -1,0 +1,42 @@
+h2 {
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#about_us_grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: min(1000px, 80%);
+    height: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #dfdfdf;
+}
+
+.pfp {
+    width: 80%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+// todo : individual profiles
