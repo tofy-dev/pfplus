@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
 body {
     margin: 0px 0px 0px 0px;
@@ -7,6 +9,7 @@ body {
 
 #title {
     text-align: center;
+    font-family: 'Tajawal';
 }
 
 #nav_menu {
@@ -27,7 +30,7 @@ body {
     width: 20%;
     text-align: center;
 
-    :hover {
+    &:hover {
         cursor: pointer;
         font-weight: bolder;
     }
@@ -56,14 +59,27 @@ body {
 }
 
 .par_border {
-    background-color: white;
-    outline: 2px solid black;
     display: inline-block;
     padding: 10px 10px 10px 10px;
 
+    transition: all 0.3s ease-out;
+    outline: 3px solid black;
+    background-color: white;
+
     &:hover {
         cursor: pointer;
-        font-weight: bolder;
+        font-size: 35px;
+        color: white;
+        background-color: black;
+    }
+}
+
+@keyframes turn_black {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: black;
     }
 }
 
