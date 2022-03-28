@@ -6,10 +6,11 @@ const gallery = document.getElementById('gallery')
 const leftArrow = document.getElementById('left_arrow');
 const rightArrow = document.getElementById('right_arrow');
 
-let imageList = names.listImages();
+let imageList = [];
 let activeImg;
 
 function init() {
+    preloadImages();
     updateImg(0);
     console.log(imageList.indexOf(activeImg));
     leftArrow.addEventListener("click", () => {
@@ -24,9 +25,26 @@ function init() {
     })
 }
 
+function preloadImages() {
+    let preloaded = names.listImages();
+    for (let img in preloaded) {
+        let newImg = new Image();
+        newImg.src = preloaded[img];
+
+        newImg.classList.add('preloading_image');
+        imageList.push(newImg);
+        gallery.appendChild(newImg);
+    }
+    document.querySelectorAll('.preloading_image').forEach(img => {
+        img.addEventListener("load", () => {
+            img.remove();
+        })
+    })
+}
+
 function updateImg(imgNum) {
     activeImg = imageList[imgNum];
-    gallery.style.backgroundImage = `url(${activeImg})`;
+    gallery.style.backgroundImage = `url(${activeImg.src})`;
     console.log(activeImg);
 }
 
