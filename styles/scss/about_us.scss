@@ -1,0 +1,79 @@
+@use 'variables' as v;
+
+h2 {
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    background-color: v.$black2;
+    color: v.$tan;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: v.$black2;
+}
+
+#team_photo {
+  background-image: url("../../images/placeholder.png");
+}
+
+#about_us_grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    width: min(1300px, 80%);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0px 20px 0px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: v.$black;
+    align-items: center;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    size: 20px;
+}
+
+#justin_prof {
+  color: v.$green;
+}
+
+#avy_prof {
+  color: v.$pink;
+}
+
+#sailesh_prof {
+  color: v.$blue;
+}
+
+#skyler_prof {
+  color: v.$orange;
+}
+
+.pfp {
+    width: 50%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.bio_text {
+    padding: 20px 0px 20px 0px;
+    width: 80%;
+}
+
+// todo : individual profiles

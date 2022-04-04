@@ -1,0 +1,77 @@
+h2 {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  background-color: #1A1826;
+  color: #f5e0dc;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #1A1826;
+}
+
+#team_photo {
+  background-image: url("../../images/placeholder.png");
+}
+
+#about_us_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  width: min(1300px, 80%);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0px 20px 0px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #1E1E2E;
+  align-items: center;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  size: 20px;
+}
+
+#justin_prof {
+  color: #abe9b3;
+}
+
+#avy_prof {
+  color: #f5c2e7;
+}
+
+#sailesh_prof {
+  color: #96cdfb;
+}
+
+#skyler_prof {
+  color: #f8bd96;
+}
+
+.pfp {
+  width: 50%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bio_text {
+  padding: 20px 0px 20px 0px;
+  width: 80%;
+}
+
+/*# sourceMappingURL=about_us.css.map */

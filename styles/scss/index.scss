@@ -1,0 +1,26 @@
+@use 'variables'  as v;
+
+#sign_up {
+    background-image: url("../../images/degenerate.jpg");
+}
+
+#content_wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: v.$black2;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: v.$black;
+    color: v.$white;
+    width: max(800px, 50%);
+    align-items: center;
+}
+
+.intro_blurb {
+    width: min(700px, 80%);
+    font-size: 20px;
+}

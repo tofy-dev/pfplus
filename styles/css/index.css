@@ -1,0 +1,26 @@
+#sign_up {
+  background-image: url("../../images/degenerate.jpg");
+}
+
+#content_wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #1A1826;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #1E1E2E;
+  color: #f9ebe9;
+  width: max(800px, 50%);
+  align-items: center;
+}
+
+.intro_blurb {
+  width: min(700px, 80%);
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

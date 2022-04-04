@@ -1,3 +1,5 @@
+@use 'variables'  as v;
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
@@ -9,8 +11,12 @@ body {
 
 // header stuff
 #title {
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
     font-family: 'Tajawal';
+    color: v.$tan;
+    background-color: v.$black2;
 }
 
 #nav_menu {
@@ -23,12 +29,13 @@ body {
     left: 0;
     width: 100%;
     height: 45px;
-    background-color: black;
-    color: white;
+    background-color: v.$tan;
+    color: v.$black;
 }
 
 .nav_item {
-    width: 20%;
+    width: 25%;
+    box-sizing: border-box;
     text-align: center;
 
     &:hover {
@@ -37,10 +44,17 @@ body {
     }
 }
 
+// footer stuff
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: v.$black3;
+}
+
 // parallax stuff
 .parallax {
     position: relative;
-    min-height: 500px;
+    min-height: 700px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,14 +75,19 @@ body {
     padding: 10px 10px 10px 10px;
 
     transition: all 0.3s ease-out;
-    outline: 3px solid black;
-    background-color: white;
+    background-color: v.$tan;
+    color: v.$black;
+    outline: 3px solid v.$black;
 
+    font-size: 45px;
+}
+
+.par_interactive {
     &:hover {
         cursor: pointer;
-        font-size: 35px;
-        color: white;
-        background-color: black;
+        font-size: 50px;
+        color: v.$tan;
+        background-color: v.$black;
     }
 }
 
@@ -83,7 +102,6 @@ body {
 
 #gallery {
     width: 600px;
-    background-color: #dfdfdf;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -100,11 +118,11 @@ body {
     width: 50px;
     height: 100px;
     font-size: 50px;
-    background-color: #dfdfdf;
-    color: black;
+    color: v.$white;
 
     &:hover {
         cursor: pointer;
+        font-weight: bolder;
     }
 }
 
@@ -115,3 +133,4 @@ body {
 #right_arrow {
   margin-left: 10px;
 }
+
