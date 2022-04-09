@@ -9,7 +9,13 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+h2 {
+    font-size: 40px;
+}
+
+// =================================================================================================
 // header stuff
+// =================================================================================================
 #title {
     margin: 0px 0px 0px 0px;
     padding: 10px 0px 10px 0px;
@@ -44,14 +50,64 @@ body {
     }
 }
 
+// =================================================================================================
 // footer stuff
+// =================================================================================================
 footer {
     width: 100%;
-    height: 80px;
     background-color: v.$black3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+#contact_us {
+    width: 100%;
+    margin-top: 20px;
+
+    font-size: 25px;
+    color: v.$gray;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_title {
+    margin: 0px 0px 0px 0px;
+}
+
+.contact_row {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.foot_item {
+    width: 25%;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
+    color: v.$gray !important;
+    font-size: 20px;
+    transition: background-color 0.5s, color 0.5s;
+
+    &:hover {
+        background-color: v.$gray;
+        color: v.$black3 !important;
+    }
+}
+
+.foot_icon {
+    font-size: 30px;
+}
+
+// =================================================================================================
 // parallax stuff
+// =================================================================================================
 .parallax {
     position: relative;
     min-height: 700px;
@@ -91,7 +147,9 @@ footer {
     }
 }
 
+// =================================================================================================
 // gallery stuff
+// =================================================================================================
 #gallery_cont {
     display: flex;
     justify-content: center;

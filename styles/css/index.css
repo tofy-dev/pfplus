@@ -16,6 +16,7 @@
   color: #f9ebe9;
   width: max(800px, 50%);
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .intro_blurb {
