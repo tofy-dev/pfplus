@@ -1,4 +1,8 @@
 export function listImages() {
-    let images = "../images/gallery/fox.jpg ../images/gallery/house.jpg ../images/gallery/mountains.jpg ../images/gallery/nothern-lights.jpg ../images/gallery/san-fran.jpg".split(" ");
+    let link = "https://tofy-dev.github.io/pfplus/images/gallery";
+    let images = ["fox.jpg", "house.jpg", "mountains.jpg", "northern-lights.jpg", "san-fran.jpg"];
+    for (let img in images) {
+        images[img] = link+images[img];
+    }
     return images;
 }
