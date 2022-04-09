@@ -4,7 +4,8 @@ const curriculum = document.getElementById("nav_curriculum");
 const signupInfo = document.getElementById("nav_signup_info");
 
 function init() {
-    let ogDir = "../../";
+    let ogDir = "https://tofy-dev.github.io/pfplus/"
+
     home.addEventListener("click", () => {
         window.open(ogDir+"index.html", "_self");
     });
