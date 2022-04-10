@@ -24,9 +24,8 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
   width: min(1300px, 80%);
-  border-radius: 20px;
   overflow: hidden;
-  margin: 20px 0px 20px 0px;
+  padding: 20px 5px 20px 5px;
 }
 
 .profile {
@@ -36,6 +35,7 @@ h2 {
   justify-content: space-evenly;
   background-color: #1E1E2E;
   align-items: center;
+  border-radius: 20px;
 }
 
 .name {
@@ -46,18 +46,26 @@ h2 {
 
 #justin_prof {
   color: #abe9b3;
+  outline: 3px solid #abe9b3;
+  background-image: linear-gradient(45deg, #1E1E2E 90%, #abe9b3 90%);
 }
 
 #avy_prof {
   color: #f5c2e7;
+  outline: 3px solid #f5c2e7;
+  background-image: linear-gradient(45deg, #1E1E2E 90%, #f5c2e7 90%);
 }
 
 #sailesh_prof {
   color: #96cdfb;
+  outline: 3px solid #96cdfb;
+  background-image: linear-gradient(45deg, #1E1E2E 90%, #96cdfb 90%);
 }
 
 #skyler_prof {
   color: #f8bd96;
+  outline: 3px solid #f8bd96;
+  background-image: linear-gradient(45deg, #1E1E2E 90%, #f8bd96 90%);
 }
 
 .pfp {
@@ -71,7 +79,7 @@ h2 {
 
 .bio_text {
   padding: 20px 0px 20px 0px;
-  width: 80%;
+  width: 90%;
 }
 
 /*# sourceMappingURL=about_us.css.map */
